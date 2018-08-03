@@ -5,7 +5,7 @@ set -x
 
 
 ###################### GIT PARAMETERS #####################################
-export GIT_PARENT_DIR=~
+export GIT_PARENT_DIR=/home/jovyan
 export GIT_REPO_NAME=jupyter
 export GIT_BRANCH_NAME=master
 export GIT_USER=Dimpison
