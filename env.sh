@@ -1,5 +1,5 @@
 ####################### SSH KEY FOR GIT ###################################
-ssh-keygen -t rsa && ssh-keygen -y -f ~/.ssh/id_rsa > ~/.ssh/id_rsa.pub && eval `ssh-agent -s` && ssh-add -k
+#ssh-keygen -t rsa && ssh-keygen -y -f ~/.ssh/id_rsa > ~/.ssh/id_rsa.pub && eval `ssh-agent -s` && ssh-add -k
 ####################### To be added to git account settings ################
 
 
@@ -34,4 +34,4 @@ fi
 
 echo 'c.NotebookApp.disable_check_xsrf = True' >> ~/.jupyter/jupyter_notebook_config.py
 
-cp $GIT_PARENT_DIR/githubcommit/config ~/.ssh/config
+#cp $GIT_PARENT_DIR/githubcommit/config ~/.ssh/config
