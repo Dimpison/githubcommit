@@ -3,6 +3,11 @@ from notebook.base.handlers import IPythonHandler
 import os, json, git, urllib, requests
 from git import Repo, GitCommandError
 from subprocess import check_output
+import logging
+
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+                    filename='/home/jovyan/githubcommit.log')
+logger = logging.getLogger(__name__)
 
 class GitCommitHandler(IPythonHandler):
 
